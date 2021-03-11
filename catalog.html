@@ -29,7 +29,7 @@
          <form action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
              <legend>Стоимость</legend>
-               <label>от<input type="text" value="0"></label>
+               <label class="cost-meaning">от<input type="text" value="0"></label>
                <label class="cost-meaning">до<input type="text" value="15000"></label>
             </fieldset>
             <fieldset>
@@ -68,7 +68,7 @@
        <section>
         <h2 class="visually-hidden">Сортировка товаров</h2>
          <form action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset>
+          <fieldset class="filters">
             <legend>Сортировать</legend>
              <div class="sorting">
                 <input type="radio" name="sorting" value="price" id="filter-price" checked>
@@ -88,51 +88,64 @@
          <ul class="catalog-list">
             <li class="catalog-item-active">
                 <img src="img/mask-group.jpg" width="360" height="576" alt="Информационный сайт для туристов «Sedona»">
-                <a class="catalog-item-info" href="">
-                    <h3>Sedona</h3>
+                  <div clas="product-info">
+                   <a class="catalog-item-info" href="">
+                     <h3>Sedona</h3>
+                   </a>
                  <p class="catalog-item-description">Информационный сайт<br>для туристов</p>
-                </a>
-                <button class="button catalog-item-price" value="9 900 руб.">9 900 руб.</button>
+                <button class="button catalog-item-price">9 900 руб.</button>
+                  </div>
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-1.jpg" width="360" height="576" alt="Приложение «Pink app»">
-                <a class="catalog-item-info" href="">
-                    <h3>Pink app</h3>
+                  <div clas="product-info">
+                   <a class="catalog-item-info" href="">
+                     <h3>Pink app</h3>
+                    </a>
                  <p class="catalog-item-description">Продуктовый лендинг<br>приложения для IOS и Android</p>
-                </a>
-                <button class="button catalog-item-price" value="9 900 руб.">9 900 руб.</button>
+                <button class="button catalog-item-price">9 900 руб.</button>
+                  </div>
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-2.jpg" width="360" height="576" alt="Салон красоты «Barbershop»">
-                <a class="catalog-item-info" href="">
-                    <h3>Barbershop</h3>
+                  <div clas="product-info">
+                    <a class="catalog-item-info" href="">
+                     <h3>Barbershop</h3>
+                    </a>
                  <p class="catalog-item-description">Сайт салона красоты.<br>Для мужчин, да.</p>
-                </a>
-                <button class="button catalog-item-price" value="9 900 руб.">9 900 руб.</button>
+                <button class="button catalog-item-price">9 900 руб.</button>
+                  </div>
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-3.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек «Mishka»">
-                <a class="catalog-item-info" href="">
-                    <h3>Mishka</h3>
+                  <div clas="product-info">
+                    <div clas="product-info">
+                      <a class="catalog-item-info" href="">
+                       <h3>Mishka</h3>
+                      </a>
                  <p class="catalog-item-description">Интернет-магазин<br>вязаных игрушек</p>
-                </a>
-                <button class="button catalog-item-price" value="9 900 руб.">9 900 руб.</button>
+                <button class="button catalog-item-price">9 900 руб.</button>
+                  </div>
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-4.jpg" width="360" height="576" alt="Курсы повышения квалификации «A plus»">
-                <a class="catalog-item-info" href="">
-                    <h3>A plus</h3>
+                    <div clas="product-info">
+                      <a class="catalog-item-info" href="">
+                        <h3>A plus</h3>
+                      </a>
                  <p class="catalog-item-description">Лендинг курсов повышения<br>квалификации</p>
-                </a>
-                <button class="button catalog-item-price" value="9 900 руб.">9 900 руб.</button>
+                <button class="button catalog-item-price">9 900 руб.</button>
+                  </div>
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-5.jpg" width="360" height="576" alt="Производитель крафтового кваса «Кваст»">
-                <a class="catalog-item-info" href="">
-                    <h3>Кваст</h3>
+                    <div clas="product-info">
+                      <a class="catalog-item-info" href="">
+                        <h3>Кваст</h3>
+                      </a>
                  <p class="catalog-item-description">Промо-сайт производителя<br>крафтового кваса</p>
-                </a>
-                <button class="button catalog-item-price" value="9 900 руб.">9 900 руб.</button>
+                <button class="button catalog-item-price">9 900 руб.</button>
+                  </div>
             </li>
          </ul>
          <ul class="pagination-list">

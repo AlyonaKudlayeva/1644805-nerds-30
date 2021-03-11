@@ -1,6 +1,7 @@
 /* Variables */
 
 :root {
+
   --basic-black: #000000;
   --basic-white: #ffffff;
   --yellow: #EFC849;
@@ -9,26 +10,58 @@
   --gray: #EEEEEE;
   --light-gray: #E1E1E1;
   --dark-white: #f2f2f2;
-
   --special-red: #E74246;
   --special-red-one: #D7373B;
   --special-green: #00BC6C;
   --special-green-one: #00AA62;
   --special-yellow: #EAB534;
-  --special-yellow: #E5A722;
+  --special-yellow-one: #E5A722;
   --special-gray: #DFDFDF;
   --special-gray-one: #D5D5D5;
   --special-black: #283136;
   --special-black-one: #4D4D4D;
   --special-black-two: #283136;
+
+  --text-color: var(--basic-black);
+  --additional-text-color: var(--basic-white);
+  --filter-text-color: var(--special-black);
+  --hover-text-color: var(--red);
+  --background-additional-color: var(--gray);
+  --background-main-color: var(--basic-white);
+  --background-sites-color: var(--red);
+  --background-sites-hover-color: var(--special-red);
+  --background-sites-focus-color: var(--special-red-one);
+  --background-apps-color: var(--green);
+  --background-apps-hover-color: var(--special-green);
+  --background-apps-focus-color: var(--special-green-one);
+  --background-presentations-color: var(--yellow);
+  --background-presentations-hover-color: var(--special-yellow);
+  --background-presentations--focus-color: var(--special-yellow-one);
+  --background-learn-button-color: var(--red);
+  --background-learn-button-hover-color: var(--special-red);
+  --background-learn-button-focus-color: var(--special-red-one);
+  --background-social-button-color: var(--light-gray);
+  --background-social-button-color: var(--special-red);
+  --background-social-button-color: var(--special-red-one);
+  --background-show-button-color: var(--gray);
+  --background-show-button-hover-color: var(--special-gray);
+  --background-show-button-focus-color: var(--special-gray-one);
+  --background-pagination-color: var(--gray);
+  --background-pagination-hover-color: var(--special-gray);
+  --background-pagination-focus-color: var(--special-gray-one);
+  --background-pagination-active-color: var(--basic-black);
+  --background-price-button-color: var(--red);
+  --background-price-button-hover-color: var(--special-red);
+  --background-price-button-focus-color: var(--special-red-one);
+  --background-catalog-info-color: var(--gray);
 }
 .page-body {
-  background-color: #ffffff;
+  background-color: var(--background-main-color);
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: var(--text-color);
   margin: 0px;
   padding: 0px;
 }
@@ -45,7 +78,7 @@ img {
 /*Header*/
 
 .main-header {
-  background-color: #EEEEEE;
+  background-color: var(--background-additional-color);
 }
 
 /*Main navigation*/
@@ -53,7 +86,7 @@ img {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  color: #000000;
+  color: var(--text-color);
   list-style: none;
   background-color: transparent;
 }
@@ -70,18 +103,15 @@ img {
     opacity: 0.3;
 }
 
-.main-navigation li a:hover,
 .main-navigation li a:hover {
-  color: #FB565A;
+  color: var(--hover-text-color);
 }
 
-.main-navigation li a:focus,
 .main-navigation li a:focus {
-  color: #000000;
+  color: var(--text-color);
   opacity: 0.3;
   }
 
-.main-navigation li a:active,
 .main-navigation li a:active {
   text-decoration: underline;
 }
@@ -91,43 +121,41 @@ img {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
+  color: var(--text-color);
 }
 
-.user-login a:hover,
 .user-login a:hover {
-  color: #FB565A;
+  color: var(--hover-text-color);
 }
 
-.user-login a:focus,
 .user-login a:focus {
-  color: #000000;
+  color: var(--text-color);
   opacity: 0.3;
-  }
+}
 
-  .user-login a:active,
-  .user-login a:active {
-    text-decoration: underline;
-  }
+.user-login a:active {
+  text-decoration: underline;
+  color: var(--text-color);
+}
 
-  .learn-more {
-    color: #ffffff;
-    text-align: center;
-    background-color: #FB565A;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-  }
+.learn-more {
+  background-color: var(--background-main-color);
+  text-align: center;
+  background-color: var(--background-learn-button-color);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--additional-text-color);
+}
 
-  .learn-more a:hover,
-  .learn-more a:hover {
-    background-color: #E74246;
-  }
+.learn-more a:hover {
+  background-color: var(--background-learn-button-hover-color);
+}
 
-  .learn-more a:focus,
-  .learn-more a:focus {
-    background-color: #D7373B;
-    opacity: 0,3;
-  }
+.learn-more a:focus {
+  background-color: var(--background-learn-button-focus-color);
+  opacity: 0,3;
+}
 
 /* Services */
 
@@ -141,55 +169,50 @@ img {
 }
 
 .order {
-  color: #ffffff;
+  background-color: var(--background-main-color);
   text-align: center;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  color: var(--additional-text-color);
 }
 
 .sites {
-  background-color: #FB565A;
+  background-color: var(--background-sites-color);
 }
 
-.sites a:hover,
 .sites a:hover {
-  background-color: #E74246;
+  background-color: var(--background-sites-hover-color);
 }
 
-.sites a:focus,
 .sites a:focus {
-  background-color: #D7373B;
+  background-color: var(--background-sites-focus-color);
   opacity: 0.3;
 }
 
 .apps {
-  background-color: #00CA74;
+  background-color: var(--background-apps-color);
 }
 
-.apps a:hover,
 .apps a:hover {
-  background-color: #00BC6C;
+  background-color: var(--background-apps-hover-color);
 }
 
-.apps a:focus,
 .apps a:focus {
-  background-color: #00AA62;
+  background-color: var(--background-apps-focus-color);
   opacity: 0.3;
 }
 
 .presentations {
-  background-color: #EFC849;
+  background-color: var(--background-presentations-color);
 }
 
-.presentations a:hover,
 .presentations a:hover {
-  background-color: #EAB534;
+  background-color: var(--background-presentations-hover-color);
 }
 
-.presentations a:focus,
 .presentations a:focus {
-  background-color: #E5A722;
+  background-color: var(--background-presentations--focus-color);
   opacity: 0.3;
 }
 
@@ -232,12 +255,10 @@ sup {
   opacity: 0.2;
 }
 
-.our-partners li a:hover,
 .our-partners li a:hover {
   opacity: 1;
 }
 
-.our-partners li a:focus,
 .our-partners li a:focus {
   opacity: 0,1;
 }
@@ -253,20 +274,17 @@ sup {
 }
 
 .social-button {
-  color: #ffffff;
-  background-color: #E1E1E1;
+  background-color: var(--background-social-button-color);
   list-style: none;
 }
 
-.social-button a:hover,
 .social-button a:hover {
-  background-color: #E74246;
+  background-color: var(--background-sites-hover-color);
 }
 
-.social-button a:focus,
 .social-button a:focus {
   opacity: 0,3;
-  background-color: #D7373B;
+  background-color: var(--background-sites-focus-color);
 }
 
 .appeal {
@@ -285,14 +303,16 @@ sup {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  background-color: var(--background-additional-color);
 }
 
 /* Filters */
 
-.filter legend {
+.filters legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .cost-meaning {
@@ -301,24 +321,38 @@ sup {
 
 .net-labels, .features-labels {
   line-height: 20px;
+  color: var(--filter-text-color);
+}
+
+.sorting-labels {
+  color: var(--text-color);
+  opacity: 0.3;
+}
+
+.sorting-labels:hover {
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+.sorting-labels:focus {
+  color: var(--text-color);
 }
 
 .show {
   line-height: 18px;
   font-weight: 500;
   text-align: center;
-  background-color: #EEEEEE;
+  background-color: var(--background-show-button-color);
+  text-transform: uppercase;
 }
 
-.show button:hover,
 .show button:hover {
-  background-color: #DFDFDF;
+  background-color: var(--background-show-button-hover-color);
 }
 
-.show button:focus,
 .show button:focus {
   opacity: 0,3;
-  background-color: #D5D5D5;
+  background-color: var(--background-show-button-focus-color);
   box-shadow: 0 3 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -329,18 +363,20 @@ sup {
 }
 
 .catalog-item {
-  background-color: #ffffff;
+  background-color: var(--background-main-color);
 }
 
-.catalog-item a:hover,
 .catalog-item a:hover {
   background-color: #f2f2f2;
   box-shadow: 0 6 15px rgba(0, 1, 1, 0.25);
 }
 
 .catalog-item-info {
-  background-color: #EEEEEE;
-  box-shadow: 0 4 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--background-additional-color);
+}
+
+.product-info {
+  background-color: var(--background-catalog-info-color);
 }
 
 .catalog-item-info h3 {
@@ -348,17 +384,17 @@ sup {
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color);
 }
 
-.catalog-item-info h3 a:hover,
 .catalog-item-info h3 a:hover {
-  color: #FB565A;
+  color: var(--hover-text-color);
 }
 
-.catalog-item-info h3 a:focus,
 .catalog-item-info h3 a:focus {
-  color: #000000;
-
+  color: var(--text-color);
+  opacity: 0.3;
 }
 
 .catalog-item-description {
@@ -368,22 +404,20 @@ sup {
 }
 
 .catalog-item-price {
-  background-color: #FB565A;
-  color:#ffffff;
+  background-color: var(--background-price-button-color);
+  color: var(--additional-text-color);
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-align: center;
 }
 
-.catalog-item-price a:hover,
-.catalog-item-price a:hover {
-  background-color: #E74246;
+.catalog-item-price button:hover {
+  background-color: var(--background-price-button-hover-color);
 }
 
-.catalog-item-price a:focus,
-.catalog-item-price a:focus {
-  background-color: #E7373B;
+.catalog-item-price button:focus {
+  background-color: var(--background-price-button-focus-color);
   opacity: 0,3;
 }
 
@@ -397,24 +431,22 @@ sup {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  background-color: #EEEEEE
+  background-color: var(--background-pagination-color);
+  color: var(--text-color);
 }
 
-.pagination-item a:hover,
 .pagination-item a:hover {
-  background-color: #DFDFDF;
+  background-color: var(--background-pagination-hover-color);
 }
 
-.pagination-item a:focus,
 .pagination-item a:focus {
   opacity: 0,3;
-  background-color: #d5d5d5;
+  background-color: var(--background-pagination-focus-color);
   box-shadow: 0 3 0px rgba(0, 1, 1, 0.1);
 }
 
-.pagination-item a:active,
 .pagination-item a:active {
-  background-color: #000000;
+  background-color: var(--background-pagination-active-color);
   box-shadow: rgba(0, 0, 0, 0.0001);
 }
 
