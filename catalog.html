@@ -9,7 +9,7 @@
   </head>
   <body class="inner-page">
    <header class="main-header">
-     <nav class="main-navigation">
+     <nav>
        <a class="main-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="159,87" height="65,02" alt="Логотип дизайн-студии Nёrd's">
       </a>
@@ -22,9 +22,10 @@
        <a class="user-login" href="">Корзина</a>
      </nav>
    </header>
-   <main class="container">
+   <main>
        <h1 class="page-title">Магазин готовых шаблонов</h1>
-       <section class="filters">
+       <div class="main-container">
+       <section class="filters-1">
          <h2 class="visually-hidden">Фильтр товаров</h2>
          <form action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
@@ -32,6 +33,7 @@
                <label class="cost-meaning">от<input type="text" value="0"></label>
                <label class="cost-meaning">до<input type="text" value="15000"></label>
             </fieldset>
+                   <div class="filter-container">
             <fieldset>
              <legend>Сетка</legend>
                <div class="net">
@@ -39,10 +41,10 @@
                     <input type="radio" name="grid" value="fixed" id="filter-fixed">
                     <input type="radio" name="grid" value="rubber" id="filter-rubber">
                 </div>
-                <div class="net-labels"></div>
-                    <label for="filter-rubber">Резиновая</label>
+                <div class="net-labels">
                     <label for="filter-adaptive">Адаптивная</label>
                     <label for="filter-fixed">Фиксированная</label>
+                    <label for="filter-rubber">Резиновая</label>
                 </div>
             </fieldset>
             <fieldset>
@@ -62,13 +64,15 @@
                     <label for="filter-basket">Корзина</label>
                 </div>
             </fieldset>
+                     </div>
             <button class="show" type="submit" value="Показать">Показать</button>
          </form>
        </section>
+       <div class="catalog-container">
        <section>
         <h2 class="visually-hidden">Сортировка товаров</h2>
          <form action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filters">
+             <fieldset class="filters">
             <legend>Сортировать</legend>
              <div class="sorting">
                 <input type="radio" name="sorting" value="price" id="filter-price" checked>
@@ -88,7 +92,7 @@
          <ul class="catalog-list">
             <li class="catalog-item-active">
                 <img src="img/mask-group.jpg" width="360" height="576" alt="Информационный сайт для туристов «Sedona»">
-                  <div clas="product-info">
+                  <div class="product-info">
                    <a class="catalog-item-info" href="">
                      <h3>Sedona</h3>
                    </a>
@@ -98,7 +102,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-1.jpg" width="360" height="576" alt="Приложение «Pink app»">
-                  <div clas="product-info">
+                  <div class="product-info">
                    <a class="catalog-item-info" href="">
                      <h3>Pink app</h3>
                     </a>
@@ -108,7 +112,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-2.jpg" width="360" height="576" alt="Салон красоты «Barbershop»">
-                  <div clas="product-info">
+                  <div class="product-info">
                     <a class="catalog-item-info" href="">
                      <h3>Barbershop</h3>
                     </a>
@@ -118,8 +122,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-3.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек «Mishka»">
-                  <div clas="product-info">
-                    <div clas="product-info">
+                    <div class="product-info">
                       <a class="catalog-item-info" href="">
                        <h3>Mishka</h3>
                       </a>
@@ -129,7 +132,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-4.jpg" width="360" height="576" alt="Курсы повышения квалификации «A plus»">
-                    <div clas="product-info">
+                    <div class="product-info">
                       <a class="catalog-item-info" href="">
                         <h3>A plus</h3>
                       </a>
@@ -139,7 +142,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/mask-group-5.jpg" width="360" height="576" alt="Производитель крафтового кваса «Кваст»">
-                    <div clas="product-info">
+                    <div class="product-info">
                       <a class="catalog-item-info" href="">
                         <h3>Кваст</h3>
                       </a>
@@ -163,6 +166,8 @@
             </li>
          </ul>
        </section>
+      </div>
+      </div>
    </main>
     <footer class="main-footer">
         <section class="map">
